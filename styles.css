@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-container {
+    color: #fff;
+    background-color: #5995da;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    /*center, flex-start/end, space-around/between*/
+    /*for horizontal alignment in flex-direction: row and for vertical alignment in flex-direction: column */
+}
+
+.menu {
+    border: 1px solid #fff;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links {
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login {
+    margin-left: 20px;
+}
+
+.signup {
+    margin-left: auto;
+}
+
+.header-container {
+    color: #5995da;
+    background-color: #d6e9fe;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*center, flex-start/end, stretch, baseline*/
+    /*opposite justify-content */
+}
+
+.social,
+.logo,
+.subscribe {
+    border: 1px solid #5995da;
+}
+
+/*To create a grid, we need the flex-wrap property*/
+.photo-grid-container {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-grid {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.photo-grid-item {
+    border: 1px solid #fff;
+    width: 300px;
+    height: 300px;
+}
+
+.first-item {
+    order: 1;
+}
+
+.last-item {
+    order: -1
+}
+
+.social,
+.subscribe {
+    align-self: flex-end; /*same align-item but for individua item*/
+    margin-bottom: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item {
+    border: 1px solid #fff;
+    background-color: #d6e9fe;
+    height: 200px;
+    flex: 1; /*shorthand for: flex-grow: 1, flex-shrink: 1, flex-basis: 0*/
+}
+
+.footer-three,
+.footer-one {
+    background-color: #5995da;
+    flex: initial;
+    width: 300px;
+}
